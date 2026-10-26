@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikita Simanjuntak | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #172033;
+      line-height: 1.7;
+    }
+    header {
+      background: #101c35;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header a, nav a {
+      color: inherit;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+    .hero {
+      padding: 90px 8%;
+      background: linear-gradient(135deg, #101c35, #254d70);
+      color: white;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.15;
+      margin: 12px 0;
+    }
+    .hero p { max-width: 650px; color: #dce7f5; }
+    .tag { color: #8dd8d0; font-weight: bold; }
+    .btn {
+      display: inline-block;
+      background: #8dd8d0;
+      color: #102238;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 12px 10px 0 0;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid #a9bed5;
+    }
+    section { padding: 55px 8%; }
+    h2 { font-size: 30px; margin-bottom: 12px; }
+    .muted { color: #5c687b; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 23px;
+    }
+    .card h3 { margin-top: 0; }
+    .skills span {
+      display: inline-block;
+      background: #e5f3f3;
+      color: #18565c;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px 4px 5px 0;
+      font-size: 14px;
+    }
+    footer {
+      padding: 25px 8%;
+      background: #101c35;
+      color: white;
+    }
+    footer a { color: #8dd8d0; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Nikita Simanjuntak</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">INFORMATION SYSTEMS GRADUATE</div>
+      <h1>Hi, I'm Nikita.<br>Turning Data into Insights.</h1>
+      <p>
+        Information Systems graduate from Institut Teknologi Del
+        with an interest in Data Analytics, Machine Learning,
+        Business Intelligence, and Quality Assurance.
+      </p>
+      <a class="btn" href="./Portofolio-Nikita.pdf" target="_blank">
+        View My Portfolio PDF
+      </a>
+      <a class="btn secondary"
+         href="https://github.com/nikitasimanjuntak005"
+         target="_blank">GitHub Profile</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="muted">
+        I am an Information Systems graduate with a GPA of 3.27/4.00
+        and a BNSP Associate Data Scientist certification. My experience
+        includes a Software Engineer internship at Telkom Indonesia
+        and academic projects involving data analysis, predictive
+        modeling, and information system development. I enjoy solving
+        problems through structured analysis, data validation,
+        and technology.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <p class="muted">Selected projects from my academic and technical work.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Phishing Website Detection</h3>
+          <p class="muted">
+            Developed a hybrid machine learning approach combining
+            rule-based filtering, ensemble models, and explainability
+            to support phishing URL detection.
+          </p>
+          <span class="tag">Python · XGBoost · Random Forest · SHAP</span>
+        </article>
+        <article class="card">
+          <h3>DelSchedule</h3>
+          <p class="muted">
+            Academic information system project focused on improving
+            scheduling workflows and reducing reliance on manual
+            spreadsheet-based processes.
+          </p>
+          <span class="tag">Information Systems · System Development</span>
+        </article>
+        <article class="card">
+          <h3>Telkom GAUL Monitoring</h3>
+          <p class="muted">
+            Contributed to an internship project for monitoring recurring
+            Wi-Fi disruptions and access point status across regional
+            operational areas.
+          </p>
+          <span class="tag">Laravel · MySQL · Data Validation</span>
+        </article>
+        <article class="card">
+          <h3>Data Analytics & BI</h3>
+          <p class="muted">
+            Worked on dashboard, data mart, and visualization projects
+            to organize data and support reporting and decision-making.
+          </p>
+          <span class="tag">SQL · Python · Tableau · BI</span>
+        </article>
+      </div>
+      <p style="margin-top:24px">
+        <a href="./Portofolio-Nikita.pdf">Explore all projects in my PDF portfolio →</a>
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+      <div class="skills">
+        <span>Python</span><span>SQL</span><span>Data Analysis</span>
+        <span>Machine Learning</span><span>Power BI / Tableau</span>
+        <span>Data Visualization</span><span>Data Validation</span>
+        <span>Manual Testing</span><span>Test Case Documentation</span>
+        <span>Git & GitHub</span><span>System Development</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p class="muted">
+        I am open to opportunities in Data Analytics, Data Science,
+        Business Intelligence, and Quality Assurance.
+      </p>
+      <a class="btn"
+         href="https://www.linkedin.com/in/nikitasimanjuntak/"
+         target="_blank">Connect on LinkedIn</a>
+      <a class="btn secondary"
+         style="color:#172033;border-color:#172033"
+         href="https://github.com/nikitasimanjuntak005"
+         target="_blank">GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nikita Simanjuntak · Portfolio</p>
+  </footer>
+</body>
+</html>
